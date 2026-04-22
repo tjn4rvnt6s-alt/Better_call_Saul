@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saul Goodman & Associates | Better Call Saul!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">Saul Goodman <span class="amp">&</span> Associates</span>
+                <span class="logo-tagline">Better Call Saul!</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#attorneys">Attorneys</a></li>
+                <li><a href="#practice-areas">Practice Areas</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact" class="btn-nav">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title fade-in">
+                <span class="highlight">Saul Goodman</span> & Associates
+            </h1>
+            <p class="hero-tagline fade-in-delay">Better Call Saul!</p>
+            <p class="hero-subtitle fade-in-delay-2">Aggressive. Strategic. Accessible.</p>
+            <a href="#contact" class="btn-hero">Free Consultation</a>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="section-title">About Our Firm</h2>
+                    <p class="mission-statement">
+                        <strong>Our Mission:</strong> To provide aggressive, strategic, and accessible legal defense to
+                        every client—regardless of their background—by using creative legal solutions, protecting client
+                        interests at all costs, and ensuring that everyone gets representation, no matter how difficult the case.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">⚖️</div>
+                            <h3>Experienced Attorneys</h3>
+                            <p>Decades of combined legal expertise</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🛡️</div>
+                            <h3>Aggressive Defense</h3>
+                            <p>We fight relentlessly for you</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">💼</div>
+                            <h3>Proven Results</h3>
+                            <p>Track record of success</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🤝</div>
+                            <h3>Client First</h3>
+                            <p>Your interests are our priority</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <span>Firm Photo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attorneys Section -->
+    <section class="attorneys" id="attorneys">
+        <div class="container">
+            <h2 class="section-title">Our Attorneys</h2>
+            <p class="section-subtitle">Meet our team of dedicated legal professionals</p>
+            <div class="attorneys-grid">
+                <!-- Jimmy McGill -->
+                <div class="attorney-card" data-attorney="jimmy">
+                    <div class="attorney-image">
+                        <img src="images/jimmy.jpg" alt="Jimmy McGill">
+                        <div class="attorney-overlay">
+                            <button class="btn-view" data-modal="modal-jimmy">View Profile</button>
+                        </div>
+                    </div>
+                    <div class="attorney-info">
+                        <h3>Jimmy McGill</h3>
+                        <p class="attorney-title">Criminal Defense Attorney</p>
+                    </div>
+                </div>
+
+                <!-- Kim Wexler -->
+                <div class="attorney-card" data-attorney="kim">
+                    <div class="attorney-image">
+                        <img src="images/kim.jpg" alt="Kim Wexler">
+                        <div class="attorney-overlay">
+                            <button class="btn-view" data-modal="modal-kim">View Profile</button>
+                        </div>
+                    </div>
+                    <div class="attorney-info">
+                        <h3>Kim Wexler</h3>
+                        <p class="attorney-title">Attorney at Law</p>
+                        <p class="attorney-specialty">Corporate Law & Pro Bono Defense</p>
+                    </div>
+                </div>
+
+                <!-- Howard Hamlin -->
+                <div class="attorney-card" data-attorney="howard">
+                    <div class="attorney-image">
+                        <img src="images/howard.jpg" alt="Howard Hamlin">
+                        <div class="attorney-overlay">
+                            <button class="btn-view" data-modal="modal-howard">View Profile</button>
+                        </div>
+                    </div>
+                    <div class="attorney-info">
+                        <h3>Howard Hamlin</h3>
+                        <p class="attorney-title">Managing Partner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Areas Section -->
+    <section class="practice-areas" id="practice-areas">
+        <div class="container">
+            <h2 class="section-title">Practice Areas</h2>
+            <p class="section-subtitle">Comprehensive legal services tailored to your needs</p>
+            <div class="practice-grid">
+                <div class="practice-card">
+                    <div class="practice-icon">🔨</div>
+                    <h3>Criminal Defense</h3>
+                    <p>Aggressive representation for DUI, drug offenses, assault, theft, and all criminal matters.</p>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-icon">🏢</div>
+                    <h3>Corporate Law</h3>
+                    <p>Business formation, contracts, compliance, mergers, and corporate litigation.</p>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-icon">👨‍👩‍👧</div>
+                    <h3>Family Law</h3>
+                    <p>Divorce, custody, adoption, and domestic relations with compassionate representation.</p>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-icon">💰</div>
+                    <h3>Personal Injury</h3>
+                    <p>Fighting for victims of accidents, medical malpractice, and workplace injuries.</p>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-icon">📜</div>
+                    <h3>Estate Planning</h3>
+                    <p>Wills, trusts, probate, and estate administration to protect your legacy.</p>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-icon">🏠</div>
+                    <h3>Real Estate Law</h3>
+                    <p>Property disputes, transactions, landlord-tenant issues, and zoning matters.</p>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-icon">⚖️</div>
+                    <h3>Civil Litigation</h3>
+                    <p>Representing plaintiffs and defendants in complex civil disputes.</p>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-icon">🛡️</div>
+                    <h3>Pro Bono Defense</h3>
+                    <p>Committed to providing legal aid to underprivileged communities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Testimonials</h2>
+            <p class="section-subtitle">What our clients say about us</p>
+            <div class="testimonials-slider">
+                <div class="slider-container" id="sliderContainer">
+                    <!-- Testimonial 1: Gus Fring -->
+                    <div class="testimonial-card active">
+                        <div class="testimonial-image">
+                            <img src="images/gus.jpg" alt="Gus Fring">
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="quote-icon">"</div>
+                            <p class="testimonial-text">Discretion and precision are everything in my line of work. Mr. Goodman understands both. He delivers results efficiently, without unnecessary complications.</p>
+                            <p class="testimonial-author">— Gus Fring</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2: Mike Ehrmantraut -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="images/mike.jpg" alt="Mike Ehrmantraut">
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="quote-icon">"</div>
+                            <p class="testimonial-text">He's not my first choice... but he gets the job done. Knows the system, knows the angles. That's what matters.</p>
+                            <p class="testimonial-author">— Mike Ehrmantraut</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3: Walter White -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="images/walter.jpg" alt="Walter White">
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="quote-icon">"</div>
+                            <p class="testimonial-text">When things escalated beyond control, Saul Goodman provided solutions. Not conventional ones—but effective.</p>
+                            <p class="testimonial-author">— Walter White</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4: Nacho Varga -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="images/nacho.jpg" alt="Nacho Varga">
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="quote-icon">"</div>
+                            <p class="testimonial-text">Sometimes you don't have good options—just better ones. Saul helps you find those.</p>
+                            <p class="testimonial-author">— Nacho Varga</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5: Huell Babineaux -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="images/huell.jpg" alt="Huell Babineaux">
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="quote-icon">"</div>
+                            <p class="testimonial-text">Best lawyer I ever had. I'm still here, ain't I?</p>
+                            <p class="testimonial-author">— Huell Babineaux</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn prev" id="sliderPrev">&#10094;</button>
+                <button class="slider-btn next" id="sliderNext">&#10095;</button>
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Get answers to common legal questions</p>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>1. Do you take difficult or unusual cases?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. We specialize in cases that other firms may turn away. Every client deserves representation, and we pride ourselves on finding solutions where others see dead ends.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>2. How much do your services cost?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Fees vary depending on the complexity of your case. We offer flexible payment options and will discuss all costs upfront—no surprises, no hidden charges.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>3. Is everything I tell you confidential?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Attorney-client privilege ensures that your information stays strictly confidential. Your privacy and protection are our top priorities.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>4. What should I do if I'm contacted by law enforcement?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Stay calm and exercise your right to remain silent. Do not answer questions or make statements without legal representation—contact us immediately for guidance.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>5. Can you guarantee a win?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No ethical attorney can guarantee outcomes. What we can guarantee is relentless effort, strategic thinking, and a commitment to achieving the best possible result for your case.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Free consultation - Available 24/7</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>9800 Montgomery Blvd NE, Suite 200<br>Albuquerque, NM 87111, USA</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>(505) 555-0199</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@saulgoodmanlaw.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-hours">
+                        <h4>Office Hours</h4>
+                        <p>Monday - Friday: 8:00 AM - 7:00 PM</p>
+                        <p>Saturday: 9:00 AM - 4:00 PM</p>
+                        <p>Sunday: By Appointment</p>
+                        <p class="emergency-note">24/7 Emergency Line Available</p>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="case-type">Case Type</label>
+                            <select id="case-type" name="caseType">
+                                <option value="">Select a practice area</option>
+                                <option value="criminal">Criminal Defense</option>
+                                <option value="corporate">Corporate Law</option>
+                                <option value="family">Family Law</option>
+                                <option value="personal-injury">Personal Injury</option>
+                                <option value="estate">Estate Planning</option>
+                                <option value="real-estate">Real Estate</option>
+                                <option value="civil">Civil Litigation</option>
+                                <option value="pro-bono">Pro Bono</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Case Details *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Request Free Consultation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Saul Goodman <span class="amp">&</span> Associates</h3>
+                    <p class="footer-tagline">Better Call Saul!</p>
+                    <p class="footer-desc">Aggressive. Strategic. Accessible.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#attorneys">Attorneys</a></li>
+                        <li><a href="#practice-areas">Practice Areas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Practice Areas</h4>
+                    <ul>
+                        <li><a href="#practice-areas">Criminal Defense</a></li>
+                        <li><a href="#practice-areas">Corporate Law</a></li>
+                        <li><a href="#practice-areas">Family Law</a></li>
+                        <li><a href="#practice-areas">Personal Injury</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>(505) 555-0199</p>
+                    <p>contact@saulgoodmanlaw.com</p>
+                    <p>9800 Montgomery Blvd NE</p>
+                    <p>Albuquerque, NM 87111</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Saul Goodman & Associates. All Rights Reserved.</p>
+                <p class="disclaimer">Attorney Advertising. Prior results do not guarantee a similar outcome.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Attorney Modals -->
+    <div class="modal" id="modal-jimmy">
+        <div class="modal-content">
+            <button class="modal-close" data-modal-close>&times;</button>
+            <div class="modal-header">
+                <img src="images/jimmy.jpg" alt="Jimmy McGill">
+            </div>
+            <div class="modal-body">
+                <h2>Jimmy McGill</h2>
+                <p class="modal-title">Criminal Defense Attorney</p>
+                <p class="modal-bio">A highly resourceful and unconventional lawyer, Jimmy McGill reinvents himself as Saul Goodman, specializing in criminal defense. Known for his sharp wit and ethically flexible methods, he excels at finding loopholes and crafting creative legal strategies. Saul represents a wide range of clients, often operating on the edge of legality.</p>
+                <div class="modal-credentials">
+                    <div class="credential">
+                        <span class="credential-number">15+</span>
+                        <span class="credential-label">Years Experience</span>
+                    </div>
+                    <div class="credential">
+                        <span class="credential-number">500+</span>
+                        <span class="credential-label">Cases Won</span>
+                    </div>
+                    <div class="credential">
+                        <span class="credential-number">98%</span>
+                        <span class="credential-label">Client Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-kim">
+        <div class="modal-content">
+            <button class="modal-close" data-modal-close>&times;</button>
+            <div class="modal-header">
+                <img src="images/kim.jpg" alt="Kim Wexler">
+            </div>
+            <div class="modal-body">
+                <h2>Kim Wexler</h2>
+                <p class="modal-title">Attorney at Law</p>
+                <p class="modal-subtitle">Corporate Law & Pro Bono Defense</p>
+                <p class="modal-bio">A disciplined and highly competent attorney, Kim Wexler builds her career through determination and integrity. She balances high-level corporate legal work with a strong commitment to pro bono cases, often defending underprivileged clients. Despite her professionalism, she is occasionally drawn into morally complex situations.</p>
+                <div class="modal-credentials">
+                    <div class="credential">
+                        <span class="credential-number">12+</span>
+                        <span class="credential-label">Years Experience</span>
+                    </div>
+                    <div class="credential">
+                        <span class="credential-number">300+</span>
+                        <span class="credential-label">Corporate Cases</span>
+                    </div>
+                    <div class="credential">
+                        <span class="credential-number">200+</span>
+                        <span class="credential-label">Pro Bono Hours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-howard">
+        <div class="modal-content">
+            <button class="modal-close" data-modal-close>&times;</button>
+            <div class="modal-header">
+                <img src="images/howard.jpg" alt="Howard Hamlin">
+            </div>
+            <div class="modal-body">
+                <h2>Howard Hamlin</h2>
+                <p class="modal-title">Managing Partner</p>
+                <p class="modal-bio">A polished and respected legal professional, Howard Hamlin serves as the managing partner. He is known for his professionalism, strong leadership, and dedication to maintaining the firm's prestigious reputation. While initially perceived as elitist, his character reveals depth, fairness, and genuine concern for others.</p>
+                <div class="modal-credentials">
+                    <div class="credential">
+                        <span class="credential-number">25+</span>
+                        <span class="credential-label">Years Experience</span>
+                    </div>
+                    <div class="credential">
+                        <span class="credential-number">1000+</span>
+                        <span class="credential-label">Cases Handled</span>
+                    </div>
+                    <div class="credential">
+                        <span class="credential-number">50+</span>
+                        <span class="credential-label">Awards Won</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="chatbot-simple.js"></script>
+
+    <!-- Floating Chat Button -->
+    <button class="chat-float-btn" id="chatFloatBtn">
+        <div class="chat-icon">💬</div>
+        <span class="chat-label">Legal Help</span>
+    </button>
+
+    <!-- Chatbot Modal -->
+    <div class="chatbot-modal" id="chatbotModal">
+        <div class="chatbot-modal-content">
+            <div class="chatbot-modal-header">
+                <div class="chat-bot-info">
+                    <div class="bot-avatar">⚖️</div>
+                    <div>
+                        <h3>Saul Assistant</h3>
+                        <span class="bot-status">● Online</span>
+                    </div>
+                </div>
+                <div class="chatbot-header-actions">
+                    <button class="header-action-btn" id="clearChatbot" title="Clear Chat">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2M10 11v6M14 11v6"/>
+                        </svg>
+                    </button>
+                    <button class="modal-close-btn" id="closeChatbot">&times;</button>
+                </div>
+            </div>
+
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot-message">
+                    <div class="message-avatar">⚖️</div>
+                    <div class="message-content">
+                        <div class="message-bubble">
+                            <p>Hello! I'm the Saul Goodman & Associates Legal Assistant. 🤝</p>
+                            <p>I'm here to help answer your questions about:</p>
+                            <ul class="quick-topics">
+                                <li>📋 Our practice areas</li>
+                                <li>💰 Fees and payment options</li>
+                                <li>📅 Scheduling consultations</li>
+                                <li>⚖️ Legal processes</li>
+                                <li>👥 Our attorneys</li>
+                                <li>📍 Contact information</li>
+                            </ul>
+                            <p><strong>How can I help you today?</strong></p>
+                        </div>
+                        <span class="message-time">Just now</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chatbot-quick-replies" id="chatbotQuickReplies">
+                <button class="quick-reply-btn" data-query="practice areas">Practice Areas</button>
+                <button class="quick-reply-btn" data-query="consultation">Free Consultation</button>
+                <button class="quick-reply-btn" data-query="fees">How much?</button>
+                <button class="quick-reply-btn" data-query="contact">Contact Info</button>
+                <button class="quick-reply-btn" data-query="criminal defense">Criminal Defense</button>
+                <button class="quick-reply-btn" data-query="attorneys">Our Lawyers</button>
+            </div>
+
+            <div class="chatbot-input-area">
+                <input type="text" id="chatbotInput" class="chatbot-input" placeholder="Type your question here..." autocomplete="off">
+                <button class="send-btn" id="chatbotSendBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* Floating Chat Button */
+        .chat-float-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #c9a962, #a68b4b);
+            color: #0a1628;
+            padding: 15px 20px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 5px 25px rgba(201, 169, 98, 0.5);
+            z-index: 999;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 0.9rem;
+            font-family: var(--font-body);
+        }
+
+        .chat-float-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 35px rgba(201, 169, 98, 0.6);
+        }
+
+        .chat-icon {
+            font-size: 1.5rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        /* Chatbot Modal */
+        .chatbot-modal {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            width: 400px;
+            max-width: calc(100vw - 60px);
+            max-height: 600px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 50px rgba(0,0,0,0.3);
+            z-index: 1000;
+            display: none;
+            flex-direction: column;
+            animation: slideUp 0.3s ease;
+        }
+
+        .chatbot-modal-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .chatbot-modal.active {
+            display: flex;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .chatbot-modal-header {
+            background: linear-gradient(135deg, #1a3a5c, #0a1628);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .chatbot-header-actions {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            z-index: 20;
+            position: relative;
+        }
+
+        .chat-bot-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .bot-avatar {
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            border: 2px solid #c9a962;
+        }
+
+        .chat-bot-info h3 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin: 0;
+            font-family: var(--font-heading);
+        }
+
+        .bot-status {
+            color: #10b981;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .chatbot-header-actions {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .header-action-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            width: 35px;
+            height: 35px;
+            border-radius: 8px;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-action-btn svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .header-action-btn:hover {
+            background: #c9a962;
+            color: #0a1628;
+        }
+
+        .modal-close-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            padding: 0;
+            margin: 0;
+        }
+
+        .modal-close-btn:hover {
+            background: #ef4444;
+            color: #fff;
+            transform: rotate(90deg);
+        }
+
+        .chatbot-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            background: #f8fafc;
+            min-height: 300px;
+            max-height: 400px;
+        }
+
+        .chatbot-messages::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .chatbot-messages::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        .chatbot-messages::-webkit-scrollbar-thumb {
+            background: #c9a962;
+            border-radius: 3px;
+        }
+
+        .message {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            animation: messageSlide 0.3s ease;
+        }
+
+        @keyframes messageSlide {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .message.user-message {
+            flex-direction: row-reverse;
+        }
+
+        .message-avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .bot-message .message-avatar {
+            background: linear-gradient(135deg, #1a3a5c, #0a1628);
+            border: 2px solid #c9a962;
+        }
+
+        .user-message .message-avatar {
+            background: linear-gradient(135deg, #c9a962, #a68b4b);
+            border: 2px solid #1a3a5c;
+        }
+
+        .message-content {
+            display: flex;
+            flex-direction: column;
+            max-width: 75%;
+        }
+
+        .message-bubble {
+            background: #fff;
+            padding: 12px 16px;
+            border-radius: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 1px solid #e8e8e8;
+        }
+
+        .user-message .message-bubble {
+            background: linear-gradient(135deg, #1a3a5c, #0a1628);
+            color: #fff;
+            border-color: #1a3a5c;
+        }
+
+        .message-bubble p {
+            line-height: 1.5;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .message-bubble p:last-child {
+            margin-bottom: 0;
+        }
+
+        .message-bubble ul {
+            margin: 8px 0;
+            padding-left: 18px;
+        }
+
+        .message-bubble li {
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+
+        .quick-topics {
+            background: #f5f3ef;
+            padding: 12px 16px;
+            border-radius: 10px;
+            margin: 10px 0;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .quick-topics li {
+            margin-bottom: 8px;
+        }
+
+        .message-time {
+            font-size: 0.7rem;
+            color: #6b7280;
+            margin-top: 4px;
+            padding-left: 5px;
+        }
+
+        .user-message .message-time {
+            text-align: right;
+            padding-right: 5px;
+        }
+
+        /* Typing Indicator */
+        .typing-indicator {
+            display: flex;
+            gap: 5px;
+            padding: 12px 16px;
+        }
+
+        .typing-dot {
+            width: 8px;
+            height: 8px;
+            background: #6b7280;
+            border-radius: 50%;
+            animation: typing 1.4s infinite;
+        }
+
+        .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+        @keyframes typing {
+            0%, 60%, 100% { transform: translateY(0); opacity: 0.7; }
+            30% { transform: translateY(-10px); opacity: 1; }
+        }
+
+        /* Quick Replies */
+        .chatbot-quick-replies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 12px 20px;
+            background: #fff;
+            border-top: 1px solid #e8e8e8;
+        }
+
+        .quick-reply-btn {
+            background: #f5f3ef;
+            border: 1px solid #c9a962;
+            color: #0a1628;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+            font-family: var(--font-body);
+        }
+
+        .quick-reply-btn:hover {
+            background: #c9a962;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* Chat Input */
+        .chatbot-input-area {
+            display: flex;
+            gap: 10px;
+            padding: 15px 20px;
+            background: #fff;
+            border-top: 2px solid #e8e8e8;
+        }
+
+        .chatbot-input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 2px solid #e8e8e8;
+            border-radius: 25px;
+            font-size: 0.95rem;
+            font-family: var(--font-body);
+            transition: 0.3s;
+        }
+
+        .chatbot-input:focus {
+            outline: none;
+            border-color: #c9a962;
+            box-shadow: 0 0 0 3px rgba(201, 169, 98, 0.1);
+        }
+
+        .send-btn {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #c9a962, #a68b4b);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+        }
+
+        .send-btn svg {
+            width: 20px;
+            height: 20px;
+            color: #0a1628;
+            margin-left: 3px;
+        }
+
+        .send-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .send-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .chat-label {
+                display: none;
+            }
+            .chat-float-btn {
+                padding: 15px;
+                border-radius: 50%;
+            }
+            .chatbot-modal {
+                bottom: 90px;
+                right: 15px;
+                left: 15px;
+                width: auto;
+                max-width: none;
+            }
+        }
+    </style>
+</body>
+</html>
